@@ -10,6 +10,7 @@ script:
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemoTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build run-tests -freshSimulator -freshInstall
 
 after_script:
+- ps auxwww
 - launchctl list
 - reattach-to-user-namespace launchctl list
 - ls -lt ~/Library/Application\ Support/iPhone\ Simulator/7.0.3/Applications/
