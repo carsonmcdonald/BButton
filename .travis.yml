@@ -5,7 +5,6 @@ before_install:
 - brew install reattach-to-user-namespace
 - reattach-to-user-namespace launchctl list
 
-
 script: 
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build test
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemoTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build run-tests -freshSimulator -freshInstall
