@@ -7,3 +7,4 @@ before_install:
 script: 
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build test
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemoTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build run-tests -freshSimulator -freshInstall
+
