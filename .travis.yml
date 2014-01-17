@@ -2,11 +2,11 @@ language: objective-c
 
 before_install:
 - uptime
-- launchctl list com.apple.quicklook
-- reattach-to-user-namespace launchctl list com.apple.quicklook
 - launchctl list
+- launchctl list com.apple.quicklook
 - brew install reattach-to-user-namespace
 - reattach-to-user-namespace launchctl list
+- reattach-to-user-namespace launchctl list com.apple.quicklook
 
 script: 
 - reattach-to-user-namespace xctool -project BButtonDemo.xcodeproj -scheme BButtonDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build test
