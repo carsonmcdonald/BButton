@@ -3,6 +3,7 @@ language: objective-c
 before_install:
 - launchctl list
 - brew install reattach-to-user-namespace
+- reattach-to-user-namespace launchctl list
 
 
 script: 
