@@ -2,6 +2,8 @@ language: objective-c
 
 before_install:
 - uptime
+- launchctl list com.apple.quicklook
+- reattach-to-user-namespace launchctl list com.apple.quicklook
 - launchctl list
 - brew install reattach-to-user-namespace
 - reattach-to-user-namespace launchctl list
