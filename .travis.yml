@@ -14,6 +14,7 @@ script:
 
 after_script:
 - ps auxwww
+- ps -f
 - launchctl list
 - reattach-to-user-namespace launchctl list
 - ls -lt ~/Library/Application\ Support/iPhone\ Simulator/7.0.3/Applications/
