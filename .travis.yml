@@ -18,3 +18,6 @@ after_script:
 - reattach-to-user-namespace launchctl list
 - ls -lt ~/Library/Application\ Support/iPhone\ Simulator/7.0.3/Applications/
 - find ~/Library/Application\ Support/iPhone\ Simulator/ -name 'BButton*.app'
+- cat ~/Library/Application\ Support/iPhone\ Simulator/7.0.3/var/run/launchd_bootstrap.plist
+- cat ~/Library/Logs/iOS\ Simulator/7.0.3/system.log
+- cat /var/log/system.log
