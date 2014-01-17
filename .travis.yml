@@ -12,3 +12,5 @@ script:
 after_script:
 - launchctl list
 - reattach-to-user-namespace launchctl list
+- ls -lt ~/Library/Application\ Support/iPhone\ Simulator/7.0.3/Applications/
+- find ~/Library/Application\ Support/iPhone\ Simulator/ -name 'BButton*.app'
